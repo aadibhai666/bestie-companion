@@ -1,0 +1,39 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+body { margin: 0; background: #0b0f17; color: #e8eefc; }
+.top {
+  position: sticky; top: 0;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 14px; background: rgba(10,14,22,.9); backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.brand { font-weight: 800; letter-spacing: .2px; }
+.status { font-size: 12px; opacity: .8; }
+
+.wrap { max-width: 820px; margin: 0 auto; padding: 14px; }
+.chat {
+  display: flex; flex-direction: column; gap: 10px;
+  min-height: 65vh; padding-bottom: 12px;
+}
+.msg {
+  padding: 10px 12px; border-radius: 14px; line-height: 1.35;
+  border: 1px solid rgba(255,255,255,.08);
+  white-space: pre-wrap;
+}
+.me { align-self: flex-end; background: rgba(80,130,255,.18); }
+.bot { align-self: flex-start; background: rgba(255,255,255,.06); }
+
+.composer { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
+textarea {
+  width: 100%; padding: 12px; border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04); color: #e8eefc;
+  resize: none;
+}
+button {
+  padding: 0 16px; border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,214,102,.14); color: #ffe49a;
+  font-weight: 700;
+}
+.small { margin-top: 10px; opacity: .8; font-size: 12px; }
+.hint { padding: 10px 12px; border: 1px solid rgba(255,255,255,.08); border-radius: 12px; }
